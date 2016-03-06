@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BIN	Makefile	/^BIN= ServerTest$/;"	m
+BUFSIZE	server.c	18;"	d	file:
+CC	Makefile	/^CC= gcc$/;"	m
+CC_FLAG	Makefile	/^CC_FLAG= -Wall -DDEBUG -g$/;"	m
+CC_INCL	Makefile	/^CC_INCL= -I.\/extern\/include $/;"	m
+Func	server.h	/^typedef void* (*Func)(void*);$/;"	t
+LD_INCL	Makefile	/^LD_INCL= -L.\/extern\/lib $/;"	m
+LIB	Makefile	/^LIB= -lpthread$/;"	m
+ListenArg	server.h	/^typedef struct ListenArg$/;"	s
+ListenArg	server.h	/^} ListenArg;$/;"	t	typeref:struct:ListenArg
+OBJ	Makefile	/^OBJ= $(SRC:.c=.o)$/;"	m
+PrintFunc	main.c	/^int PrintFunc($/;"	f
+SRC	Makefile	/^SRC= main.c server.c thread.c$/;"	m
+ServerArg	server.h	/^typedef struct ServerArg$/;"	s
+ServerArg	server.h	/^} ServerArg;$/;"	t	typeref:struct:ServerArg
+TCPLogServerRead	server.c	/^int TCPLogServerRead($/;"	f
+TCPLogServerStart	server.c	/^int TCPLogServerStart($/;"	f
+ThreadFunc	thread.h	/^typedef void* (*ThreadFunc)(void*);$/;"	t
+ThreadListen	server.c	/^int ThreadListen($/;"	f
+ThreadSendRecv	server.c	/^int	ThreadSendRecv($/;"	f
+ThreadStart	thread.c	/^int ThreadStart($/;"	f
+_LARGEFILE64_SOURCE	main.c	2;"	d	file:
+__DEBUG_H	debug.h	8;"	d
+__SERVER_H	server.h	7;"	d
+__THREAD_H	thread.h	7;"	d
+debug	debug.h	17;"	d
+debug	debug.h	21;"	d
+main	main.c	/^int main($/;"	f
+nServerSocket	server.h	/^	int		nServerSocket;$/;"	m	struct:ListenArg
+nSock	server.h	/^	int		nSock;$/;"	m	struct:ServerArg
+pFile	main.c	/^FILE*	pFile = NULL;$/;"	v
+pFunc	server.h	/^	Func	pFunc;$/;"	m	struct:ListenArg
+pFunc	server.h	/^	Func	pFunc;$/;"	m	struct:ServerArg
+sRecvFile	main.c	/^char	sRecvFile[128]="recvfile";$/;"	v
